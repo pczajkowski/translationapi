@@ -14,6 +14,13 @@ To install Node.js on mac os, visit http://nodejs.org/ and click install. This w
 ###Windows###
 To install Node.js on windows os, visit http://nodejs.org/ and click Install. You will be prompted to download an .msi file that contains the installer. Save the .msi file to a location on your drive and launch the installer by double-clicking on it. Follow the on screen instructions to complete the installation.
 
+###Docker###
+Using Docker you can start testing by executing just two commands, and you need to do first one only once. Just make sure you're in **server** folder.
+```sh
+docker build -t tausapiserver .
+docker run -it --rm -p 3412:3412 --name test tausapiserver
+```
+
 ###Testing the installation###
 
 To test if Node.js is installed on your computer,
